@@ -1,4 +1,4 @@
-# Memory Analyzer
+# SGDK ROM Symbol usage
 
 SGDK Tool for memory consumption analysis based on the `symbol.txt` file generated during build.
 
