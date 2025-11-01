@@ -48,9 +48,23 @@ identify what is consuming the most memory in your project.
 
 ## How to use
 
+### Installation
+
+Install directly from GitHub using pip:
+
 ```bash
-cd tools/symbol
-python3 quick_summary.py
+pip install git+https://github.com/retrodevbr/sgdk-symbol-usage.git
+```
+
+Or add to your `requirements.txt`:
+
+```
+sgdk-symbol-usage @ git+https://github.com/retrodevbr/sgdk-symbol-usage.git
+```
+
+### Usage
+```bash
+sgdk-symbol-usage [path to your symbol.txt]
 ```
 
 ### Displays in terminal:
@@ -62,6 +76,8 @@ python3 quick_summary.py
 ## Dependencies
 
 - Python 3.6+
+
+No external dependencies required!
 
 ## Categories
 

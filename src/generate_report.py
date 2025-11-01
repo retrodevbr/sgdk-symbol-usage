@@ -152,7 +152,7 @@ def parse_and_summarize(symbol_file: str):
     for i, symbol in enumerate(top_symbols, 1):
         print(f"{i:2d}. {symbol['name']:65s} {symbol['category']:10s}{symbol['size'] / 1024:8.2f} KB")
 
-if __name__ == '__main__':
+def main():
     symbol_file = 'symbol.txt'
     if len(sys.argv) > 1:
         symbol_file = sys.argv[1]
@@ -165,3 +165,8 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"\n❌ Error: {e}\n")
         sys.exit(1)
+
+
+if __name__ == '__main__':
+    main()
+
